@@ -17,3 +17,17 @@ document.addEventListener('DOMContentLoaded', function (){
     });
 
 });
+
+// document.addEventListener('scroll', function () {
+//     let navbar = document.getElementsByClassName('nav')[0];
+//     let sticky = navbar.offsetTop;
+    
+//     if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky")
+//       } 
+    
+//     else {
+//         navbar.classList.remove("sticky");
+//       }
+
+// })

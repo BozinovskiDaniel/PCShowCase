@@ -14,6 +14,17 @@ function Home() {
                 </div>
 
             </section>
+
+            <section className="sectiontwo">
+                <div className="grid-item"></div>
+                <div className="grid-item">
+                    <h1>The Competitive Edge</h1>
+                    <p>Hard to beat, and impossible to miss - SPEC-ALPHA'S hard edged design and numerous
+                       color combinations make a bold statement.</p>
+                    <div className="btn btn-outline-dark btn-lg">See More</div>
+                </div>
+                <div className="grid-item"></div>
+            </section>
             
             <section className="wrapper skewed">
                 <div className="layer bottom">
@@ -46,12 +57,7 @@ function Home() {
             </section>
 
             <section className="imageBundle">
-                <div className="grid-container">
-                    <div className="grid-item">1</div>
-                    <div className="grid-item">2</div>
-                    <div className="grid-item">3</div>
-                    <div className="grid-item">4</div>
-                </div>              
+                     
             </section>
 
             
