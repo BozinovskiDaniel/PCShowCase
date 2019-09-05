@@ -5,17 +5,23 @@ import '../js/main';
 
 function Nav() {
     return (
-        <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
-            <Link to="/"><div className="navbar-brand">Pc ShowCase | Quality Products</div></Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-                <Link to="/"><div className="middle"><div className="nav-item nav-link">HOME</div></div></Link>
-                <Link to="/store"><div className="middle"><div className="nav-item nav-link">STORE</div></div></Link>
-                <Link to="/contact"><div className="middle"><div className="nav-item nav-link">CONTACT US</div></div></Link>
-            </div>
+        <nav className="navbar sticky-top navbar-expand-lg">
+            <Link to="/"><a className="navbar-brand" href="#">PC Showcase</a></Link>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="nav navbar-nav mx-auto">
+                <li className="nav-item active">
+                    <Link to="/"><a className="nav-link">Home<span className="sr-only">(current)</span></a></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/store"><a className="nav-link">Store</a></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/contact"><a className="nav-link">Contact Us</a></Link>
+                </li>
+            </ul>
         </div>
         </nav>
 

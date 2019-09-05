@@ -21,7 +21,7 @@ function Home() {
                     <h1>The Competitive Edge</h1>
                     <p>Hard to beat, and impossible to miss - SPEC-ALPHA'S hard edged design and numerous
                        color combinations make a bold statement.</p>
-                    <div className="btn btn-outline-dark btn-lg">See More</div>
+                       <button type="button" class="btn">SEE MORE</button>
                 </div>
                 <div className="grid-item"></div>
             </section>
@@ -57,9 +57,68 @@ function Home() {
             </section>
 
             <section className="imageBundle">
-                     
+                <div id="gallery" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/1.jpg')} alt="Image 1"/>
+                                </div>
+
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/2.jpg')} alt="Image 2"/>
+                                </div>
+
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/3.jpg')} alt="Image 3"/>
+                                </div>
+
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/4.jpg')} alt="Image 4"/>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/5.jpg')} alt="Image 6"/>
+                                </div>
+
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/6.jpg')} alt="Image 7"/>
+                                </div>
+
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/7.jpg')} alt="Image 8"/>
+                                </div>
+
+                                <div class="col">
+                                    <img class="img-fluid" src={require('../images/8.jpg')} alt="Image 9"/>
+                                </div>
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>        
             </section>
 
+
+            <section className="whiteBlock">
+                <h1>Some text</h1>
+            </section>
+
+            <section className="sectionthree">
+                <div className="grid-item"></div>
+                <div className="grid-item">
+                    <h1>Get an Edge on your Opponents</h1>
+                    <p>Receive the best possible gaming equipment with us, allowing you
+                    to get that much needed edge!</p>
+                       <button type="button" class="btn">SHOP NOW</button>
+                </div>
+                <div className="grid-item"></div>
+            </section>
             
         </body>
     );
