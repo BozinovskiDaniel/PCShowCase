@@ -11,38 +11,36 @@ function Home() {
             <div className="landing-page">
                 <div class="overlay"></div>
                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" />
+                    <source src={require('../images/bg-vid.mp4')} type="video/mp4" />
                 </video>
                 <div class="container h-100">
                     <div class="d-flex h-100 text-center align-items-center">
                         <div class="w-100 text-white">
-                            <h1 class="display-3">Pc Showcase</h1>
+                            <img src={require('../images/logo-bg.png')} height="100px" alt="logo" />
                             <p class="lead mb-0">View our wide variety of high quality PC gear</p>
-                            <div class="arrow bounce"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></div>
+                            <a class="arrow bounce"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <section className="sectiontwo">
-                <div className="grid-item"></div>
                 <div className="grid-item">
                     <h1>The Competitive Edge</h1>
                     <p>Hard to beat, and impossible to miss - SPEC-ALPHA'S hard edged design and numerous
-                       color combinations make a bold statement.</p>
-                       <button type="button" class="btn">SEE MORE</button>
+                       color</p>
+                    <p>combinations make a bold statement.</p>
+                    <div className="btnholder"><button type="button" class="btn">SEE MORE</button></div>
                 </div>
-                <div className="grid-item"></div>
             </section>
             
             <section className="wrapper skewed">
                 <div className="layer bottom">
                     <div class="content-wrap">
                         <div className="content-body">
-                            <h1>Look Sharp</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                                a more-or-less normal distribution of letters</p>
+                            <h1>LOOK SHARP</h1>
+                            <p>The bold, modern exterior of this case features a panoramic window
+                            display and front intake LED fans that light up your throw downs.</p>
                         </div>
                         <img src={require('../images/light.png')} alt="light pc" />
                     </div>
@@ -52,10 +50,9 @@ function Home() {
                 <div className="layer top">
                     <div className="content-wrap">
                         <div className="content-body">
-                            <h1>Stay Cool</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                                a more-or-less normal distribution of letters</p>
+                            <h1>STAY COOL</h1>
+                            <p>Three included 150mm fans keep you running cool with an unobstructed direct-airflow path
+                            , and in control with a three-speed fan controller for ultimate noise control.</p>
                         </div>
                         <img src={require('../images/dark.png')} alt="dark pc" />
                     </div>

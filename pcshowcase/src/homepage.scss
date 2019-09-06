@@ -107,6 +107,7 @@
 .top {
     background: #eee;
     color: #222;
+    font-weight: 300;
     z-index: 2;
     width: 50vw;
 
@@ -151,10 +152,10 @@
 
 .sectiontwo {
     width: 100%;
-    height: 450px;
+    height: 350px;
     background-color: var(--main-theme-color);
     display: grid;
-    grid-template-columns: 25% 1fr 25%;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     text-align: center;
@@ -163,20 +164,29 @@
     
     h1 {
         font-size: 40px;
+        font-weight: bold;
         color: black; 
-        padding-top: 30px;
+        padding: 30px 0px 30px 0px;
         font-family: 'Open Sans', sans-serif;
     }
     
     p {
         font-size: 18px;
-        padding: 30px;
         font-family: 'Open Sans', sans-serif;
     }
 
     .btn {
         background: black;
         color: white;
+        padding: 12px;
+
+        &:hover {
+            font-size: 120%;
+        }
+    }
+
+    .btnholder {
+        padding: 30px 0px 30px 0px;
     }
 
 }

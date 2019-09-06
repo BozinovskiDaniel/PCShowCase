@@ -1,5 +1,6 @@
 const $ = window.$;
 
+// Slider in multi image background
 document.addEventListener('DOMContentLoaded', function (){
     let wrapper = document.getElementsByClassName('wrapper')[0];
     let topLayer = wrapper.querySelector('.top');
@@ -20,16 +21,15 @@ document.addEventListener('DOMContentLoaded', function (){
 
 });
 
-document.addEventListener('scroll', function(){
 
-    
-});
-
+// Navbar Fade In Effect
 $(window).scroll(function() {
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
 });
 
+// Arrow Fade Out Effect
 $(window).scroll(function(){
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 800); 
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500); 
   //250 is fade pixels
   });
+
