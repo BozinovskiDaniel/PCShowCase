@@ -7,13 +7,22 @@ function Home() {
     return (
         <body>
 
-            <section className="landing-page">
-                <div className="lpbody">
-                    <h1>Pc Showcase</h1>
-                    <p>A New Take on Hardware!</p>
+            
+            <div className="landing-page">
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" />
+                </video>
+                <div class="container h-100">
+                    <div class="d-flex h-100 text-center align-items-center">
+                        <div class="w-100 text-white">
+                            <h1 class="display-3">Pc Showcase</h1>
+                            <p class="lead mb-0">View our wide variety of high quality PC gear</p>
+                            <div class="arrow bounce"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
                 </div>
-
-            </section>
+            </div>
 
             <section className="sectiontwo">
                 <div className="grid-item"></div>

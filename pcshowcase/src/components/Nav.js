@@ -5,21 +5,21 @@ import '../js/main';
 
 function Nav() {
     return (
-        <nav className="navbar sticky-top navbar-expand-lg">
-            <Link to="/"><a className="navbar-brand">PC Showcase</a></Link>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <Link to="/"><div className="navbar-brand"><img src={require('../images/logonav.png')} width="135px" height="65px" alt="logo" /></div></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="nav navbar-nav ml-auto">
                 <li className="nav-item active">
-                    <Link to="/"><a className="nav-link">HOME<span className="sr-only">(current)</span></a></Link>
+                    <Link to="/"><div className="nav-link" style={{color: 'white'}}>Home<span className="sr-only">(current)</span></div></Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/store"><a className="nav-link">STORE</a></Link>
+                    <Link to="/store"><div className="nav-link">Store</div></Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact"><a className="nav-link">CONTACT US</a></Link>
+                    <Link to="/contact"><div className="nav-link">Contact Us</div></Link>
                 </li>
             </ul>
         </div>

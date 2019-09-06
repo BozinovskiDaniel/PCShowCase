@@ -1,3 +1,5 @@
+const $ = window.$;
+
 document.addEventListener('DOMContentLoaded', function (){
     let wrapper = document.getElementsByClassName('wrapper')[0];
     let topLayer = wrapper.querySelector('.top');
@@ -5,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function (){
     let skew = 0;
     let delta = 0;
 
-    if (wrapper.className.indexOf('skewed') != -1 ) {
+    if (wrapper.className.indexOf('skewed') !== -1 ) {
         skew = 995;
     }
     
@@ -22,3 +24,12 @@ document.addEventListener('scroll', function(){
 
     
 });
+
+$(window).scroll(function() {
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
+});
+
+$(window).scroll(function(){
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 800); 
+  //250 is fade pixels
+  });

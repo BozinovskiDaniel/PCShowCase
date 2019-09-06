@@ -1,29 +1,52 @@
 .landing-page {
-    height: 88vh;
-    width: 100%;
-    background-image: url("./images/home-bg-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center left;
     position: relative;
+    background-color: black;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 
-    .lpbody {
-        color: #222;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%,-90%);
-
-        h1 {
-            font-size: 60px;
-        }
-
-        p {
-            font-size: 45px;
-        }    
+    .container {
+        position: relative;
+        z-index: 2;
     }
-}
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+    }
+  }
+  
+ .landing-page video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
 
 
 
@@ -125,17 +148,13 @@
 }
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 
 .sectiontwo {
     width: 100%;
     height: 450px;
     background-color: var(--main-theme-color);
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 25% 1fr 25%;
     grid-template-rows: 1fr;
     align-items: center;
     text-align: center;
@@ -143,16 +162,16 @@
 
     
     h1 {
-        font-size: 50px;
+        font-size: 40px;
         color: black; 
         padding-top: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
     
     p {
-        font-size: 25px;
+        font-size: 18px;
         padding: 30px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .btn {
@@ -186,7 +205,95 @@
 
 
 @media(max-width:768px){
-    body {
-        font-size: 75%;
+    .layer {
+        h1 {
+            font-size: 1px;
+        }
     }
+
+    .sectiontwo {
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+
 }
+
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  
+  
+  i {
+    display: block;
+    color: #fff;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 120px; /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+  }
+  
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
