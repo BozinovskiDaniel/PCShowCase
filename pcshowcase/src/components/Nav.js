@@ -5,7 +5,7 @@ import '../js/main';
 
 function Nav() {
     return (
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <Link to="/"><div className="navbar-brand"><img src={require('../images/logonav.png')} width="105px" height="45px" alt="logo" /></div></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
