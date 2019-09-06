@@ -5,10 +5,21 @@
 
 .navbar-brand {
     padding-left: 35px;
+    font-size: 30px;
+    color: white;
 
 }
 
-.navbar-default {
-    background: none;
+.navbar-nav {
+    padding-right: 200px;
 }
 
+.nav-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+.navbar {
+    color: white;
+}
