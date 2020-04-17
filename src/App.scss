@@ -1,0 +1,24 @@
+// Imports
+@import './css/navbar.scss';
+@import './css/homepage.scss';
+@import './css/footer.scss';
+@import './css/store.scss';
+@import './css/history.scss';
+
+// Variables
+:root {
+    --main-theme-color: #FDAB00;
+}
+
+// Base styling
+*, body {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
